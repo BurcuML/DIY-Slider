@@ -46,4 +46,12 @@ body{
     color: white;
     padding: 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, font-size 0.2s ease;
+    margin: 0 10px;
+}
+
+.btns button:hover {
+    background-color: #C5651A;
+    transform: scale(1.05);
+    font-size: 1.1rem;
 }
