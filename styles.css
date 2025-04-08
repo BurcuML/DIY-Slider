@@ -21,10 +21,29 @@ body{
     display: flex;
     align-items: center;
     margin: 20px;
+    flex-direction: column;
 }
 #slider {
     margin-right: 10px;
 }
 #slider-value {
     font-size: 20px;
+}
+#img-slider img{
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 15px;
+}
+.btns{
+    margin-top: 20px;
+}
+.btns button{
+    max-width: 100%;
+    width: 150px;
+    background-color: #DF751E;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
 }
