@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 .container{
@@ -14,7 +15,6 @@ body{
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-top: 50px;
 }
 
 #slider-container {
@@ -29,10 +29,15 @@ body{
 #slider-value {
     font-size: 20px;
 }
-#img-slider img{
+.img-slider img{
     object-fit: cover;
     max-width: 100%;
     border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.img-slider img.active {
+    opacity: 1;
 }
 .btns{
     margin-top: 20px;
