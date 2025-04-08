@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DIY Slider</title>
 </head>
+
 <body>
     <main>
         <div class="container">
             <h1>DIY Slider</h1>
-            <p>Welcome to the DIY Slider project! This is a simple slider implementation using HTML, CSS, and JavaScript.</p>
+            <p>Welcome to the DIY Slider project! This is a simple slider implementation using HTML, CSS, and
+                JavaScript.</p>
             <div id="slider-container">
-                <div id="img-slider">
-                            <img src="img/img1.png" alt="">        
+                <div class="img-slider">
+                    <img src="img/img1.png" alt="">
                 </div>
-               <!--  <input type="range" id="slider" min="0" max="100" value="50"> -->
+                <div class="img-slider">
+                    <img src="img/img2.png" alt="">
+                </div>
+                <div class="img-slider">
+                    <img src="img/img3.png" alt="">
+                </div>
                 <span id="slider-value"></span>
                 <div class="btns">
-                <button>Prev</button>
-                <button>Next</button>                    
+                    <button id="prev">Prev</button>
+                    <button id="next">Next</button>
                 </div>
             </div>
             <script src="script.js"></script>
         </div>
     </main>
 </body>
+
 </html>
