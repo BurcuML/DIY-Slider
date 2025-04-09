@@ -1,17 +1,34 @@
 const images = document.querySelectorAll('#slider-container img');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
-const dots = document.querySelector(".dots")
+const dotsCont = document.querySelector(".dots")
 
 let totalImgs = images.length; // Total number of images
+let dot;
 
 for (let i = 0; i < totalImgs; i++) {
-  let dot = document.createElement("button");
+  dot = document.createElement("button");
   dot.classList.add("dot");
-  dots.appendChild(dot);
-}   
+  dotsCont.appendChild(dot);
+     dot.addEventListener("click", () => {
+      updateDots();
+      images[currentIndex].classList.remove('active');
+      currentIndex = i;
+      images[currentIndex].classList.add('active');
+      
+    }) 
+}
 
-/* dot.classList.add("active") */
+const dots = document.querySelectorAll(".dot");
+
+
+function updateDots() {
+  dots.forEach(dot =>
+    dot.classList.remove("active"));
+  dots[currentIndex].classList.add("active");
+}
+
+
 
 let currentIndex = 0; // Index of the currently displayed image
 
@@ -24,7 +41,7 @@ prevButton.addEventListener('click', () => {
 })
 
 nextButton.addEventListener('click', () => {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % totalImgs;
-    images[currentIndex].classList.add('active');
-    } )
+  images[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % totalImgs;
+  images[currentIndex].classList.add('active');
+})
