@@ -34,7 +34,7 @@ body{
     font-size: 20px;
 }
 .img-slider img{
-    position: absolute;
+    position: absolute; /* resimlerin üst üste gelmesi için, opacity kullandığımızdan dolayı */
     top: 0;
     left: 0;
     width: 100%;
@@ -81,14 +81,15 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dot {
+    opacity: 0.7;
     height: 15px;
     width: 15px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color: #DF751E;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -96,5 +97,5 @@ body{
 }
 
 .dot.active {
-    background-color: #DF751E;
+    background-color: #C5651A;
 }
