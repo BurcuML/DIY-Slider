@@ -11,13 +11,13 @@ for (let i = 0; i < totalImgs; i++) {
   dot.classList.add("dot");
   dotsCont.appendChild(dot);
      dot.addEventListener("click", () => {
-      updateDots();
       images[currentIndex].classList.remove('active');
       currentIndex = i;
       images[currentIndex].classList.add('active');
-      
+      updateDots();
     }) 
 }
+
 
 const dots = document.querySelectorAll(".dot");
 
