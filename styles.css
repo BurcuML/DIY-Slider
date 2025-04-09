@@ -33,7 +33,7 @@ body{
     object-fit: cover;
     max-width: 100%;
     border-radius: 15px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.5s ease;
 }
 .img-slider img.active {
