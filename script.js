@@ -5,22 +5,22 @@ const nextButton = document.getElementById('next');
 
 let totalImgs = images.length; // Total number of images
 
- for (let i = 1; i < totalImgs; i++) {
+/* for (let i = 1; i < totalImgs; i++) {
   images[i].style.display = 'none';
-}   
- 
+}    */
 
-images[0].style.display = 'block';
 let currentIndex = 0; // Index of the currently displayed image
 
+images[currentIndex].classList.add('active'); // Show the first image
+
 prevButton.addEventListener('click', () => {
-  images[currentIndex].style.display = 'none';
+  images[currentIndex].classList.remove('active');
   currentIndex = (currentIndex - 1 + totalImgs) % totalImgs;
-  images[currentIndex].style.display = 'block';
+  images[currentIndex].classList.add('active');
 })
 
 nextButton.addEventListener('click', () => {
-    images[currentIndex].style.display = 'none';
+    images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % totalImgs;
-    images[currentIndex].style.display = 'block';
+    images[currentIndex].classList.add('active');
     } )
