@@ -38,10 +38,12 @@ prevButton.addEventListener('click', () => {
   images[currentIndex].classList.remove('active');
   currentIndex = (currentIndex - 1 + totalImgs) % totalImgs;
   images[currentIndex].classList.add('active');
+  updateDots();
 })
 
 nextButton.addEventListener('click', () => {
   images[currentIndex].classList.remove('active');
   currentIndex = (currentIndex + 1) % totalImgs;
   images[currentIndex].classList.add('active');
+  updateDots();
 })
