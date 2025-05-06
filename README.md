@@ -19,6 +19,8 @@ Bu proje, JavaScript ile oluşturulmuş basit bir DIY görüntü kaydırıcıdı
 - Görsel yollarını JavaScript dosyasında güncelleyin.
 
 
+# DIY Slider
+
 This project is a simple DIY image slider built with JavaScript. It allows users to easily navigate between images.
 
 ## Features
